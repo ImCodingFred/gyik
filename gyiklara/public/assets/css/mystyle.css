@@ -1,0 +1,138 @@
+:root{
+    --bs-dark-rgb: 10, 15, 12;
+    --bs-secondary-rgb: 157, 223, 182;
+
+
+    --text: #0b110e;
+    --background: #f2f8f4;
+    --primary: #50b576;
+    --secondary: #9ddfb6;
+    --accent: #6fdb98;
+}
+
+body{
+    background-color: #F2F8F4;
+    color: #0B110E;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-link{
+    font-size: 130%;
+    color: #F2F8F4;
+}
+.nav-link:hover{
+    color: #9FE0B8;
+}
+
+.navbar-brand img{
+    height: 45px;
+    margin-left: 60px;
+}
+.icons{
+    margin-right: 60px;
+}
+
+.icons span{
+    margin-top: 3px;
+    font-size: 45px;
+}
+
+.icons a{
+    color: #F2F8F4;
+}
+
+.icons a:hover{
+    color: #9FE0B8;
+}
+
+.card{
+    padding-bottom: 0px;
+}
+
+.card h5{
+    font-variant: small-caps;
+    font-size: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card p{
+    height: 175px;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+.btn-checkBox {
+    color: var(--text);
+    background-color: var(--background);
+    border-bottom: 3px solid transparent;
+}
+
+.btn-check+.btn-checkBox:hover {
+    color: var(--primary);
+    border-bottom: 3px solid transparent;
+}
+
+
+
+.btn-check:active+.btn-checkBox:hover {
+    border-bottom: 3px solid var(--primary);
+    filter: drop-shadow(0 0 10px var(--accent));
+}
+
+.btn-check:checked+.btn-checkBox {
+    color: var(--text);
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 3px solid var(--primary);
+    filter: drop-shadow(0 0 10px var(--accent));
+}
+
+footer ul{
+    list-style: none;
+    margin: auto;
+}
+
+footer ul li{
+    float: left;
+    margin-left: 10px;
+    margin-right : 10px;
+    font-size: 130%;
+}
+
+main a,
+footer a
+{
+    color: #50b576;
+    text-decoration: none;
+    transition: 250ms;
+}
+
+main a:hover,
+footer a:hover
+{
+    color:#6fdb98;
+    transition: 250ms;
+    filter: drop-shadow(0 0 10px gray);
+}
+
+.mylink a{
+    color: var(--bs-blue);
+}
+.mylink a:hover{
+    color: var(--bs-blue);
+}
+.bg-accent{
+    background-color: var(--accent);
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-brand img{
+        margin-left: 5px;
+    }
+    .icons{
+        margin-right: 5px;
+    }
+}
+
+
